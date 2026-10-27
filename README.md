@@ -3,6 +3,7 @@
 PSPのPS1エミュレーター（POPS）の**AV出力ケーブルのぼけを改善**するプラグインです。純正の拡大率・表示比率は変更しません。
 
 **対象環境:** PSP-3000 (04g) / 6.61 / ARK-5
+![OFF / FILTER FIX](images/POPS_Filter_OFF_vs_FILTER_FIX.png)
 
 | PS1の水平解像度 | フィルター |
 | --- | --- |
