@@ -1,18 +1,26 @@
 # POPS Scaling Filter Fix
 
-A PSP POPS plugin that adjusts **AV output** texture filtering without changing the original display scaling or aspect ratio.
+PSPのPS1エミュレーター（POPS）の**AV出力のぼけを改善**するプラグインです。純正の拡大率・表示比率は変更しません。
 
-| PS1 horizontal mode | Filter |
+**対象環境:** PSP-3000 (04g) / 6.61 / ARK-5
+
+| PS1の水平解像度 | フィルター |
 | --- | --- |
-| 256 / 320 / 640 | **Nearest** |
-| 368 / 512 | Linear |
+| 256・320・640 | **Nearest（くっきり）** |
+| 368系・512 | Linear |
 
-The filter is reapplied along the supported rendering path after in-game resolution changes.
+ゲーム中の解像度変更にも、対応する描画経路では自動追従します。すべてのゲームでの動作を保証するものではありません。
 
-**Target:** PSP-3000 (04g), firmware 6.61, ARK-5. Other configurations are untested.
+## ダウンロード・導入
 
-## Build
+[Releases](https://github.com/mayuta212/POPS-Scaling-Filter-Fix/releases) から `PopsScaleFilter.prx` を取得し、PSPのPOPS用プラグインとして有効化してください。以前の `PopsTVUnlock.prx` とは併用しないでください。交換時はPOPSを完全終了してください。
 
-With PSPDEV installed, run `make clean && make` to generate **`PopsScaleFilter.prx`**. Install it as a POPS plugin; do not run it together with earlier `PopsTVUnlock.prx` versions. Fully exit and restart POPS when changing plugins.
+## Build (PSPDEV)
 
-This is source-only. No Sony firmware binaries are included. MIT License.
+```sh
+make clean && make
+```
+
+出力ファイル：`PopsScaleFilter.prx`。対応外のPOPSテキストではパッチを適用しません。実行時のログ採取はありません。Sonyのファームウェアバイナリは含みません。
+
+MIT License.
