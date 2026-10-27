@@ -1,0 +1,15 @@
+# PSPDEV build output
+*.o
+*.elf
+*.prx
+*.sfo
+*.pbp
+*.a
+*.map
+*.d
+*.exp
+!exports.exp
+*.log
+*.swp
+.DS_Store
+__pycache__/
