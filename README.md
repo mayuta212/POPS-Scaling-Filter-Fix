@@ -15,10 +15,6 @@ PSPのPS1エミュレーター（POPS）の**AV出力ケーブルのぼけを改
 
 ゲーム中の解像度変更にも、対応する描画経路では自動追従します。すべてのゲームでの動作を保証するものではありません。
 
-## 画質比較
-
-![OFF / FILTER FIX 比較画像](images/POPS_Filter_OFF_vs_FILTER_FIX.png)
-
 ## ダウンロード・導入
 
 [Releases](https://github.com/mayuta212/POPS-Scaling-Filter-Fix/releases) から `PopsScaleFilter.prx` を取得し、PSPのPOPS用プラグインとして有効化してください。以前の `PopsTVUnlock.prx` とは併用しないでください。交換時はPOPSを完全終了してください。
